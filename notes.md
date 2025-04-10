@@ -10,6 +10,6 @@ const token = await jwt.sign({ userId: user._id }, SECRET, {
     expiresIn: "24h",
 });
 // validating token
-const token = req.headers.authorization
-const decoded = jwt.verify(token, SECRET)
+const token = req.headers.authorization;
+const decoded = jwt.verify(token, SECRET);
 ```
